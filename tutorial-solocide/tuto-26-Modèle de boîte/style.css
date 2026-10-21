@@ -1,0 +1,99 @@
+
+/* Réglage général */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb;
+    color: #111827;
+}
+
+/* Bannière d'accueil */
+.banniere-accueil {
+    padding: 96px 24px;
+    text-align: center;
+    background: #ffffff;
+
+    /* Effet de fond quadrillé */
+    background-image: radial-gradient(
+        #e5e7eb 1px,
+        transparent 1px
+    );
+    background-size: 24px 24px;
+}
+
+/* Titre de la bannière */
+.banniere-accueil h1 {
+    max-width: 850px;
+    margin: 0 auto;
+    font-size: 56px;
+    color: #0a2042;
+    line-height: 1.2;
+}
+
+/* Paragraphe de la bannière */
+.banniere-accueil p {
+    max-width: 680px;
+    margin: 24px auto 0;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #6b7280;
+}
+
+/* Section des articles */
+.section-articles {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 48px 24px;
+}
+
+.section-articles h2 {
+    margin-bottom: 24px;
+    color: #0a2042;
+}
+
+/* Carte d'article */
+.carte-article {
+    margin-bottom: 24px;
+    padding: 24px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+
+.carte-article h3 {
+    margin-top: 0;
+    color: #0a2042;
+}
+
+.carte-article p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.carte-article a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.carte-article a:hover {
+    text-decoration: underline;
+}
+
+/* Adaptation aux petits écrans */
+@media (max-width: 600px) {
+    .banniere-accueil {
+        padding: 64px 20px;
+    }
+
+    .banniere-accueil h1 {
+        font-size: 36px;
+    }
+
+    .banniere-accueil p {
+        font-size: 16px;
+    }
+}
