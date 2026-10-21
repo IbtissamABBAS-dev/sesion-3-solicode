@@ -1,0 +1,50 @@
+
+/* 1. Dimensionnement global */
+* {
+    box-sizing: border-box;
+}
+
+/* 2. Section principale */
+.section-articles {
+    padding: 80px 24px;
+}
+
+/* 3. Carte d'article */
+.carte-article {
+    width: 300px;
+    background: #f9fafb;
+    border: 2px solid #e5e7eb;
+    margin-bottom: 24px;
+
+    /* Coins arrondis et découpage du contenu */
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* 4. Image cliquable */
+.carte-image {
+    display: block;
+}
+
+/* 5. Dimensionnement de l'image */
+.carte-image img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* 6. Espacement intérieur */
+.carte-contenu {
+    padding: 20px;
+}
+
+/* 7. Espacement du titre */
+.carte-contenu h3 {
+    margin: 0;
+}
+
+/* 8. Espacement du paragraphe */
+.carte-contenu p {
+    margin: 12px 0;
+}
