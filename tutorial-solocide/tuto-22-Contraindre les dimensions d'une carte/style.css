@@ -1,0 +1,41 @@
+
+/* 1. Dimensionnement global */
+* {
+    box-sizing: border-box;
+}
+
+/* 2. Section principale */
+.section-articles {
+    padding: 80px 24px;
+}
+
+/* 3. Conteneur responsive */
+.conteneur-articles {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 4. Carte d'article */
+.carte-article {
+    width: 100%;
+    max-width: 300px;
+    background: #f9fafb;
+    border: 2px solid #e5e7eb;
+    margin-bottom: 24px;
+}
+
+/* 5. Contenu de la carte */
+.carte-contenu {
+    padding: 20px;
+}
+
+/* 6. Titre */
+.carte-contenu h3 {
+    margin: 0;
+}
+
+/* 7. Paragraphe */
+.carte-contenu p {
+    margin: 12px 0;
+}
