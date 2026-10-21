@@ -1,0 +1,159 @@
+
+/* =========================
+   1. STYLES GLOBAUX
+========================= */
+
+body {
+    margin: 0;
+    color: #1f2937;
+    background: #f9fafb;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* =========================
+   2. BARRE DE NAVIGATION
+========================= */
+
+.en-tete-site {
+    padding: 20px 24px;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.barre-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.logo-sombre {
+    color: #111827;
+}
+
+.logo-couleur {
+    color: #2673e8;
+}
+
+.liens-navigation {
+    display: flex;
+    gap: 24px;
+}
+
+.liens-navigation a {
+    color: #6b7280;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* =========================
+   3. BOUTON PRINCIPAL
+========================= */
+
+.bouton-principal {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background: #2673e8;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* =========================
+   4. CONTENU PRINCIPAL
+========================= */
+
+.contenu-principal {
+    padding: 30px 24px;
+}
+
+.presentation {
+    margin-bottom: 35px;
+    padding: 35px;
+    background: #eaf2ff;
+    border-radius: 12px;
+}
+
+.presentation h1 {
+    margin-top: 0;
+    color: #111827;
+}
+
+.articles h2 {
+    margin-bottom: 20px;
+}
+
+/* =========================
+   5. CARTES AVEC FLEXBOX
+========================= */
+
+.liste-cartes {
+    display: flex;
+    gap: 24px;
+}
+
+.carte {
+    flex: 1;
+    padding: 20px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+.carte h3 {
+    color: #2673e8;
+}
+
+.carte a {
+    color: #2673e8;
+    font-weight: bold;
+}
+
+/* =========================
+   6. PIED DE PAGE
+========================= */
+
+.pied-de-page {
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* =========================
+   7. VERSION MOBILE
+========================= */
+
+@media (max-width: 650px) {
+    .barre-navigation {
+        flex-wrap: wrap;
+    }
+
+    .liens-navigation {
+        flex-wrap: wrap;
+    }
+
+    .liste-cartes {
+        flex-direction: column;
+    }
+}
