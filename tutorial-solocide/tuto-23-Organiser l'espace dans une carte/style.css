@@ -1,0 +1,33 @@
+
+/* 1. Dimensionnement global */
+* {
+    box-sizing: border-box;
+}
+
+/* 2. Section principale */
+.section-articles {
+    padding: 80px 24px;
+}
+
+/* 3. Carte d'article */
+.carte-article {
+    width: 300px;
+    background-color: #f9fafb;
+    border: 2px solid #e5e7eb;
+    margin-bottom: 24px;
+}
+
+/* 4. Espacement intérieur de la carte */
+.carte-contenu {
+    padding: 20px;
+}
+
+/* 5. Espacement du titre */
+.carte-contenu h3 {
+    margin: 0;
+}
+
+/* 6. Espacement du paragraphe */
+.carte-contenu p {
+    margin: 12px 0;
+}
