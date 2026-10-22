@@ -1,0 +1,125 @@
+
+/* Style général */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9fafb;
+    color: #111827;
+}
+
+/* En-tête */
+.entete {
+    padding: 30px;
+    text-align: center;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.entete h1 {
+    margin: 0 0 10px;
+    font-size: 28px;
+}
+
+.entete p {
+    color: #6b7280;
+}
+
+/* Contenu principal */
+.contenu {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 24px;
+    min-height: 150px;
+}
+
+.contenu h2 {
+    font-size: 24px;
+}
+
+.contenu p {
+    color: #6b7280;
+    line-height: 1.7;
+}
+
+/* Pied de page */
+.pied-de-page {
+    margin-top: 80px;
+    padding: 64px 24px 24px;
+    background: white;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* Flexbox : aligner les 3 colonnes horizontalement */
+.conteneur-pied-de-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+/* Colonnes du pied de page */
+.colonne-pied-de-page {
+    flex: 1;
+}
+
+.colonne-pied-de-page h2 {
+    margin: 0 0 20px;
+    color: #111827;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.colonne-pied-de-page p,
+.colonne-pied-de-page a {
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.colonne-pied-de-page ul {
+    padding-left: 20px;
+}
+
+.colonne-pied-de-page li {
+    margin-bottom: 12px;
+}
+
+.colonne-pied-de-page a {
+    text-decoration: none;
+}
+
+.colonne-pied-de-page a:hover {
+    color: #111827;
+}
+
+/* Bas du pied de page */
+.bas-pied-de-page {
+    max-width: 1200px;
+    margin: 64px auto 0;
+    padding-top: 24px;
+    text-align: center;
+    border-top: 1px solid #e5e7eb;
+}
+
+.bas-pied-de-page p {
+    margin: 0;
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+/* Version mobile */
+@media (max-width: 600px) {
+    .conteneur-pied-de-page {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .pied-de-page {
+        padding: 40px 20px 20px;
+    }
+
+    .bas-pied-de-page {
+        margin-top: 40px;
+    }
+}
