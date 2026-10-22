@@ -1,0 +1,169 @@
+
+/* Réinitialisation */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #111827;
+    background: #f9fafb;
+}
+
+/* Barre de navigation */
+.barre-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 40px;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #111827;
+    text-decoration: none;
+}
+
+/* Liens de navigation */
+.liens-navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.liens-navigation a {
+    color: #4b5563;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.liens-navigation a:hover {
+    color: #111827;
+}
+
+/* Bouton */
+.bouton-connexion {
+    padding: 12px 18px;
+    background: #111827;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Contenu principal */
+.contenu {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 24px;
+    min-height: 200px;
+}
+
+.contenu h1 {
+    font-size: 32px;
+}
+
+.contenu p {
+    color: #6b7280;
+    line-height: 1.7;
+}
+
+/* Pied de page */
+.pied-de-page {
+    margin-top: 80px;
+    padding: 64px 40px 24px;
+    background: white;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* Colonnes du pied de page */
+.conteneur-pied-de-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.colonne-pied-de-page {
+    flex: 1;
+}
+
+.colonne-pied-de-page h2 {
+    margin: 0 0 20px;
+    font-size: 16px;
+    color: #111827;
+    text-transform: uppercase;
+}
+
+.colonne-pied-de-page p,
+.colonne-pied-de-page a {
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.colonne-pied-de-page ul {
+    padding-left: 20px;
+}
+
+.colonne-pied-de-page li {
+    margin-bottom: 12px;
+}
+
+.colonne-pied-de-page a {
+    text-decoration: none;
+}
+
+/* Bas du pied de page */
+.bas-pied-de-page {
+    max-width: 1200px;
+    margin: 64px auto 0;
+    padding-top: 24px;
+    text-align: center;
+    border-top: 1px solid #e5e7eb;
+}
+
+.bas-pied-de-page p {
+    margin: 0;
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+/* Version mobile */
+@media (max-width: 700px) {
+    .barre-navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .liens-navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .conteneur-pied-de-page {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .pied-de-page {
+        padding: 40px 20px 20px;
+    }
+
+    .bas-pied-de-page {
+        margin-top: 40px;
+    }
+}
