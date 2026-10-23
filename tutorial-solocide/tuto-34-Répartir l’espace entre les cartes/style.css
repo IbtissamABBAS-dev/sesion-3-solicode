@@ -1,0 +1,421 @@
+
+/* ============================= */
+/* SECTION DES ARTICLES */
+/* ============================= */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #111827;
+    background: #f9fafb;
+}
+
+
+/* =========================
+   2. BARRE DE NAVIGATION
+========================= */
+
+.barre-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 40px;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #111827;
+    text-decoration: none;
+}
+
+.liens-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.liens-navigation a {
+    color: #4b5563;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.liens-navigation a:hover {
+    color: #111827;
+}
+
+.bouton-connexion {
+    display: inline-block;
+    padding: 12px 18px;
+    background: #111827;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.bouton-connexion:hover {
+    background: #374151;
+}
+
+
+/* =========================
+   3. CONTENU PRINCIPAL
+========================= */
+
+.contenu {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 24px;
+    min-height: 200px;
+}
+
+.contenu h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contenu p {
+    color: #6b7280;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   4. FILTRES DE CATEGORIES
+========================= */
+
+.filtre-categories {
+    margin: 64px 24px;
+    text-align: center;
+}
+
+.filtre-categories h2 {
+    margin: 0 0 20px;
+    color: #111827;
+    font-size: 18px;
+}
+
+/* Flexbox et retour à la ligne */
+
+.liste-filtres {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Boutons des filtres */
+
+.pilule-filtre {
+    display: inline-block;
+    flex-shrink: 0;
+    padding: 10px 16px;
+    color: #4b5563;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.pilule-filtre.actif {
+    color: white;
+    background: #111827;
+    border-color: #111827;
+}
+
+.pilule-filtre:hover {
+    border-color: #111827;
+}
+
+
+/* =========================
+   5. PIED DE PAGE
+========================= */
+
+.pied-de-page {
+    margin-top: 80px;
+    padding: 64px 40px 24px;
+    background: white;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* Les trois colonnes */
+
+.conteneur-pied-de-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.colonne-pied-de-page {
+    flex: 1;
+}
+
+.colonne-pied-de-page h2 {
+    margin: 0 0 20px;
+    color: #111827;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.colonne-pied-de-page p,
+.colonne-pied-de-page a {
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.colonne-pied-de-page ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.colonne-pied-de-page li {
+    margin-bottom: 12px;
+}
+
+.colonne-pied-de-page a {
+    text-decoration: none;
+}
+
+.colonne-pied-de-page a:hover {
+    color: #111827;
+}
+
+
+/* =========================
+   6. BAS DU PIED DE PAGE
+========================= */
+
+.bas-pied-de-page {
+    max-width: 1200px;
+    margin: 64px auto 0;
+    padding-top: 24px;
+    text-align: center;
+    border-top: 1px solid #e5e7eb;
+}
+
+.bas-pied-de-page p {
+    margin: 0;
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+
+/* =========================
+   7. VERSION MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .barre-navigation {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .liens-navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .contenu {
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .contenu h1 {
+        font-size: 26px;
+    }
+
+    .filtre-categories {
+        margin: 40px 16px;
+    }
+
+    .liste-filtres {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteneur-pied-de-page {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 24px;
+    }
+
+    .pied-de-page {
+        padding: 40px 20px 20px;
+    }
+
+    .bas-pied-de-page {
+        margin-top: 40px;
+    }
+}
+
+/* ============================= */
+/* Navigation */
+/* ============================= */
+
+.liens-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+/* ============================= */
+/* Pied de page */
+/* ============================= */
+
+.conteneur-pied-de-page {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+
+
+.section-articles {
+    padding: 80px 24px;
+}
+
+.conteneur-articles {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* En-tête des articles */
+
+.entete-liste-articles {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.entete-liste-articles h2 {
+    margin: 0;
+    color: #111827;
+    font-family: Georgia, serif;
+    font-size: 32px;
+}
+
+.entete-liste-articles p {
+    margin: 8px 0 0;
+    color: #6b7280;
+}
+
+.lien-voir-tout {
+    color: #2673e8;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ============================= */
+/* GRILLE DES ARTICLES */
+/* ============================= */
+
+.grille-articles {
+    display: flex;
+    gap: 32px;
+}
+
+/* ============================= */
+/* CARTES DES ARTICLES */
+/* ============================= */
+
+.carte-article {
+    flex: 1;
+    overflow: hidden;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+/* Contenu des cartes */
+
+.carte-contenu {
+    padding: 20px;
+}
+
+.carte-contenu h3 {
+    margin: 0;
+    color: #111827;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.carte-contenu p {
+    margin: 12px 0;
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Informations des articles */
+
+.carte-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 20px;
+    padding-top: 16px;
+    color: #9ca3af;
+    font-size: 12px;
+    border-top: 1px solid #f3f4f6;
+}
+
+/* ============================= */
+/* ÉTIQUETTES DES CATÉGORIES */
+/* ============================= */
+
+.etiquette-categorie {
+    display: inline-block;
+    margin: 16px 16px 0;
+    padding: 6px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    background: #f0f6ff;
+    border-radius: 99px;
+}
+
+.etiquette-categorie.bleu {
+    color: #1c5bba;
+}
+
+.etiquette-categorie.rose {
+    color: #db2777;
+    background: #fdf2f8;
+}
+
+.etiquette-categorie.vert {
+    color: #059669;
+    background: #ecfdf5;
+}
