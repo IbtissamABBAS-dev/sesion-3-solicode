@@ -1,0 +1,7 @@
+.logo { color: #0a2042; font-family: Georgia, serif; font-size: 22px; font-weight: 900; }
+.bouton-principal { display: inline-block; padding: 10px 20px; color: white; background: #2673e8; border-radius: 8px; font-size: 14px; font-weight: 600; text-align: center; }
+.bouton-secondaire { display: inline-block; padding: 10px 20px; color: #1f2937; background: white; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 14px; font-weight: 600; text-align: center; }
+.filtre { padding: 8px 16px; background: white; border: 1px solid #e5e7eb; border-radius: 999px; cursor: pointer; }
+.filtre.actif { color: white; background: #2673e8; border-color: #2673e8; }
+.carte { flex: 1; min-width: 240px; display: flex; flex-direction: column; justify-content: space-between; gap: 12px; padding: 20px; background: white; border: 1px solid #e5e7eb; border-radius: 12px; }
+.carte .bouton-principal { align-self: flex-start; }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mon Blog Personnel</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+  <header class="entete">
+    <a href="#" class="logo">MonBlog</a>
+    <nav class="menu">
+      <a href="#">Accueil</a><a href="#articles">Articles</a><a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="banniere-accueil">
+    <h1>Mon Blog Personnel :<br><span>Développer &amp; Partager</span></h1>
+    <p>Découvrez mes derniers articles sur le développement web, l'architecture logicielle et les bonnes pratiques d'intégration UI/UX.</p>
+    <div class="actions-banniere">
+      <a href="#articles" class="bouton-principal">Lire les articles</a>
+      <a href="#" class="bouton-secondaire">À propos de moi</a>
+    </div>
+  </section>
+
+  <section class="filtres">
+    <button class="filtre actif">Tous</button>
+    <button class="filtre">HTML</button>
+    <button class="filtre">CSS</button>
+    <button class="filtre">JavaScript</button>
+  </section>
+
+  <main id="articles" class="grille-articles">
+    <article class="carte">
+      <h2>Comprendre Flexbox</h2>
+      <p>Les bases de l'axe principal et de l'axe secondaire.</p>
+      <a href="#" class="bouton-principal">Lire</a>
+    </article>
+    <article class="carte">
+      <h2>CSS modulaire</h2>
+      <p>Organiser ses fichiers CSS proprement.</p>
+      <a href="#" class="bouton-principal">Lire</a>
+    </article>
+    <article class="carte">
+      <h2>UI/UX en pratique</h2>
+      <p>Les bonnes pratiques d'intégration.</p>
+      <a href="#" class="bouton-principal">Lire</a>
+    </article>
+    <article class="carte">
+      <h2>Architecture web</h2>
+      <p>Structurer un projet front-end.</p>
+      <a href="#" class="bouton-principal">Lire</a>
+    </article>
+  </main>
+</body>
+</html>

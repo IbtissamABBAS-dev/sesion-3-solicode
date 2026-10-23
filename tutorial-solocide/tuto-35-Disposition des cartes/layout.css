@@ -1,0 +1,5 @@
+.entete { display: flex; justify-content: space-between; align-items: center; padding: 16px 24px; background: white; border-bottom: 1px solid #e5e7eb; }
+.menu { display: flex; gap: 24px; }
+.menu a { color: #1f2937; font-weight: 600; }
+.filtres { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; padding: 24px; }
+.grille-articles { display: flex; flex-wrap: wrap; align-items: stretch; gap: 24px; max-width: 1200px; margin: 0 auto; padding: 24px; }
